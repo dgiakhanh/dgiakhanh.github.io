@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --light: #eaecee;
+    --color-text: #85a2d1;
+    --box-shadow:
+        5px 5px 15px #c1c8d3,
+        -5px -5px 15px #ffffff;
+}
+
+a {
+    color: #7598d1;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: var(--light);
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.banner {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-bottom: 1px solid #cfdae1;
+    padding-bottom: 50px;
+}
+
+.banner .content {
+    text-align: justify;
+    padding-right: 50px;
+}
+
+.banner .content h1 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.find {
+    margin-top: 50px;
+}
+
+.find ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.find ul li {
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner .avatar {
+    position: relative;
+    height: max-content;
+    text-align: center;
+}
+
+.banner .avatar::before {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    content: '';
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.banner img {
+    width: 90%;
+}
+
+header .navDiv,
+header .nav label,
+header input {
+    display: none;
+}
